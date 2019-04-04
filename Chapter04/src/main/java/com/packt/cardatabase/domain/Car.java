@@ -1,12 +1,12 @@
 package com.packt.cardatabase.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.FetchType;
 
 @Entity
 public class Car {
@@ -16,7 +16,7 @@ public class Car {
 	private String brand, model, color, registerNumber;
 	private int year, price;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "owner")
 	private Owner owner;
 	

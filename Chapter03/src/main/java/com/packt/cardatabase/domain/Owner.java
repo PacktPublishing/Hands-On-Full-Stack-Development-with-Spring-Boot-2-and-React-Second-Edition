@@ -9,11 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 @Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Owner {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -21,7 +17,6 @@ public class Owner {
 	private String firstname, lastname;
 	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy="owner")
-	@JsonIgnore
 	private List<Car> cars;
 	
 	public Owner() {}
