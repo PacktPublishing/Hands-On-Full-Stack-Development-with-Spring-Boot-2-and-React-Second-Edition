@@ -1,6 +1,6 @@
 ## Commands used in chapter 6
 
-This is how
+This command creates React app named myapp:
 
 ```
 npx create-react-app myapp
