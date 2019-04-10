@@ -2,7 +2,7 @@
 
 These commands prints out the version of npm and node
 
-````
+```
 npm -v
 node -v
 ```
