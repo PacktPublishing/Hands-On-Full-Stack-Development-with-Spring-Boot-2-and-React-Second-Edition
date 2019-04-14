@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a snapshot 1`] = `
+<div>
+  <button
+    className="MuiButtonBase-root-252 MuiButton-root-226 MuiButton-outlined-234 MuiButton-outlinedPrimary-235"
+    disabled={false}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onContextMenu={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+    tabIndex="0"
+    type="button"
+  >
+    <span
+      className="MuiButton-label-227"
+    >
+      New Car
+    </span>
+    <span
+      className="MuiTouchRipple-root-271"
+    />
+  </button>
+</div>
+`;
