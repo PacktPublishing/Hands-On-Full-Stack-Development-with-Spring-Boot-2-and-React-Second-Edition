@@ -1,5 +1,6 @@
 # Code snippets
 
+...
 public class Car {
    private Owner owner;
    
@@ -8,6 +9,7 @@ public class Car {
    }
 }
 
+...
 public class Car {
    private Owner owner;
    
@@ -16,6 +18,7 @@ public class Car {
    }
 }
 
+...
 public class Car {
    private Owner owner;
    
@@ -24,22 +27,25 @@ public class Car {
    }
 }
 
+...
 public class Car {
    @Autowired
    private Owner owner;
    
-    ...
+   // continues
 }
 
+...
 public class Car {
    @Autowired
    private CarRepository carRepository;
    
     // Fetch all cars from db
     carRepositoty.findAll();
-    ...
+    //Continues
 }
 
+...
 @Configuration
 public class ConfigFileResource {
  
@@ -50,12 +56,14 @@ public class ConfigFileResource {
     }
 }
 
+...
 // By bean name
 @Resource(name="configFile")
 private ConfigFile cFile
 
 OR
 
+...
 // Without name
 @Resource
 private ConfigFile cFile
