@@ -1,6 +1,6 @@
 # Code snippets
 
-...
+```java
 public class Car {
    private Owner owner;
    
@@ -8,8 +8,9 @@ public class Car {
       owner = new Owner();
    }
 }
+```
 
-...
+```java
 public class Car {
    private Owner owner;
    
@@ -17,6 +18,7 @@ public class Car {
       this.owner = owner;
    }
 }
+```
 
 ...
 public class Car {
