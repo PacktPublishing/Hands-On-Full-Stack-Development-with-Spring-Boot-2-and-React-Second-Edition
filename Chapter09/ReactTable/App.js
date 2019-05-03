@@ -42,7 +42,7 @@ class App extends Component {
       filterable: false,
       width: 100,
       accessor: 'full_name',
-      Cell: ({value}) => (<button className="btn btn-default btn-link" onClick={()=>{this.btnClick(value)}}>Press me</button>)
+      Cell: ({value}) => (<button onClick={()=>{this.btnClick(value)}}>Press me</button>)
     }]
 
     return (
