@@ -1,5 +1,6 @@
 # Code snippets
 
+```java
 public class Car {
    private Owner owner;
    
@@ -7,7 +8,9 @@ public class Car {
       owner = new Owner();
    }
 }
+```
 
+```java
 public class Car {
    private Owner owner;
    
@@ -15,7 +18,9 @@ public class Car {
       this.owner = owner;
    }
 }
+```
 
+```java
 public class Car {
    private Owner owner;
    
@@ -23,23 +28,29 @@ public class Car {
       this.owner = owner;
    }
 }
+```
 
+```java
 public class Car {
    @Autowired
    private Owner owner;
    
-    ...
+   // continues
 }
+```
 
+```java
 public class Car {
    @Autowired
    private CarRepository carRepository;
    
     // Fetch all cars from db
     carRepositoty.findAll();
-    ...
+    //Continues
 }
+```
 
+```java
 @Configuration
 public class ConfigFileResource {
  
@@ -49,13 +60,17 @@ public class ConfigFileResource {
         return configFile;
     }
 }
+```
 
+```java
 // By bean name
 @Resource(name="configFile")
 private ConfigFile cFile
 
 OR
 
+
 // Without name
 @Resource
 private ConfigFile cFile
+```
