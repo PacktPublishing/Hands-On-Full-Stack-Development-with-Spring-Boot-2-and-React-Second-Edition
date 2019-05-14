@@ -22,7 +22,7 @@ class App extends Component {
   }
   
   render() {
-    const imgSrc = `http://openweathermap.org/img/w/'${this.state.icon}.png`;
+    const imgSrc = 'http://openweathermap.org/img/w/' + this.state.icon + '.png';
 
     if (this.state.loading) {
      return  <p>Loading</p>;
