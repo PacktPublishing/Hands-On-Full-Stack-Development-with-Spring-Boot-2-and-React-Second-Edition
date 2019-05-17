@@ -18,10 +18,12 @@ const AddItem = (props) => {
     setOpen(false);
   }
 
+  // Handle the change of input field values
   const handleChange = (e) => {
     setItem({...item, [e.target.name]:e.target.value})
   }
 
+  // Calls addItem function (in props) and pass item state into it.
   const addItem = () => {
     props.addItem(item);
     handleClose();
@@ -35,8 +37,10 @@ const AddItem = (props) => {
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">New Item</DialogTitle>
         <DialogContent>
-          <TextField autoFocus margin="dense" value={item.product} onChange={handleChange} name="product" label="Product" fullWidth />
-          <TextField autoFocus margin="dense" value={item.amount} onChange={handleChange} name="amount" label="Amount" fullWidth />
+          <TextField autoFocus margin="dense" value={item.product} 
+            onChange={handleChange} name="product" label="Product" fullWidth />
+          <TextField autoFocus margin="dense" value={item.amount} 
+            onChange={handleChange} name="amount" label="Amount" fullWidth />
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} color="primary">
