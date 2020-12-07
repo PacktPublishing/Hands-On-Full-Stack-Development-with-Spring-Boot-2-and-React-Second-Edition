@@ -23,6 +23,17 @@ If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1838
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
 
+## Errata
+
+* Page 43: To get the H2 console working you should add the following line in the application.properties file (Use your own folder instead of C:/work):
+```
+spring.datasource.url = jdbc:h2:file:C:/work/testdb
+```
+Now, it creates testdb database file into the folder that you have defined. Then in the console JDBC URL type the following with your own folder:
+```
+jdbc:h2:file:C:/work/testdb
+```
+
 ## Instructions and Navigations
 All of the code is organized into folders. For example, Chapter10.
 
